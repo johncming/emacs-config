@@ -162,10 +162,10 @@
   :config
   (yas-global-mode 1))
 
-(use-package ido-vertical-mode
-  :config
-  (ido-mode 1)
-  (ido-vertical-mode 1))
+;; (use-package ido-vertical-mode
+;;   :config
+;;   (ido-mode 1)
+;;   (ido-vertical-mode 1))
 
 (use-package go-guru
   :demand t)
