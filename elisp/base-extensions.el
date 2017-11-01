@@ -76,7 +76,7 @@
 
 (use-package magit
   :config
-  
+
   :bind
   ;; Magic
   ("C-x g s" . magit-status)
@@ -112,12 +112,6 @@
   ("C-c l" . org-store-link)
   ("C-c a" . org-agenda))
 
-(use-package org-projectile
-  :config
-  (org-projectile:per-repo)
-  (setq org-projectile:per-repo-filename "todo.org"
-	org-agenda-files (append org-agenda-files (org-projectile:todo-files))))
-
 (use-package org-bullets
   :config
   (setq org-hide-leading-stars t)
@@ -131,7 +125,7 @@
   :config
   (setq projectile-known-projects-file
         (expand-file-name "projectile-bookmarks.eld" temp-dir))
-  
+
   (projectile-global-mode))
 
 (use-package recentf
@@ -167,5 +161,17 @@
 (use-package yasnippet
   :config
   (yas-global-mode 1))
+
+(use-package ido-vertical-mode
+  :config
+  (ido-mode 1)
+  (ido-vertical-mode 1))
+
+(use-package go-guru
+  :demand t)
+
+(use-package multishell)
+
+(use-package docker-compose-mode)
 
 (provide 'base-extensions)

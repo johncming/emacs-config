@@ -1,6 +1,6 @@
-(use-package spacemacs-theme
+(use-package ahungry-theme
   :defer t
   :init
-  (load-theme 'spacemacs-dark t))
+  (load-theme 'ahungry t))
 
 (provide 'base-theme)

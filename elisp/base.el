@@ -24,7 +24,7 @@
 (setq default-process-coding-system '(utf-8-unix . utf-8-unix))
 
 ;; Emacs customizations
-(setq confirm-kill-emacs                  'y-or-n-p
+(setq confirm-kill-emacs                  nil
       confirm-nonexistent-file-or-buffer  t
       save-interprogram-paste-before-kill t
       mouse-yank-at-point                 t
@@ -58,7 +58,7 @@
  history-length                     1000
  backup-inhibited                   nil
  make-backup-files                  t
- auto-save-default                  t
+ auto-save-default                  nil
  auto-save-list-file-name           (concat temp-dir "/autosave")
  make-backup-files                  t
  create-lockfiles                   nil
@@ -79,6 +79,8 @@
 
 ;; Delete trailing whitespace before save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(add-hook 'dired-mode-hook (lambda () (dired-hide-details-mode)))
 
 (provide 'base)
 ;;; base ends here
