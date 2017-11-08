@@ -174,4 +174,6 @@
 
 (use-package docker-compose-mode)
 
+(use-package go-playground)
+
 (provide 'base-extensions)

@@ -10,4 +10,7 @@
 
 (global-set-key (kbd "C-c m") 'multishell-pop-to-shell)
 
+(global-set-key (kbd "C-c q") 'go-playground)
+(global-set-key (kbd "C-c k") 'go-run)
+
 (provide 'base-global-keys)
