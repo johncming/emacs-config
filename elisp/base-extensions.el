@@ -176,4 +176,6 @@
 
 (use-package go-playground)
 
+(use-package dockerfile-mode)
+
 (provide 'base-extensions)
