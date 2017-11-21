@@ -1,6 +1,11 @@
-(use-package ahungry-theme
+;; (use-package ahungry-theme
+;;   :defer t
+;;   :init
+;;   (load-theme 'ahungry t))
+
+(use-package badwolf-theme
   :defer t
   :init
-  (load-theme 'ahungry t))
+  (load-theme 'badwolf t))
 
 (provide 'base-theme)

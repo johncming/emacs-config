@@ -6,7 +6,6 @@
   ;; Call Gofmt before saving
   (add-hook 'before-save-hook 'gofmt-before-save)
   (add-hook 'go-mode-hook 'setup-go-mode-compile)
-  (add-hook 'go-mode-hook #'smartparens-mode)
   (add-hook 'go-mode-hook '(lambda ()
 			     (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)))
   (add-hook 'go-mode-hook '(lambda ()

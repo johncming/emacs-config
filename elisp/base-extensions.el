@@ -133,7 +133,7 @@
   (setq recentf-save-file (recentf-expand-file-name "~/.emacs.d/private/cache/recentf"))
   (recentf-mode 1))
 
-(use-package smartparens)
+;; (use-package smartparens)
 
 (use-package smex)
 
