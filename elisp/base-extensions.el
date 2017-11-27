@@ -178,4 +178,6 @@
 
 (use-package dockerfile-mode)
 
+(use-package go-rename)
+
 (provide 'base-extensions)
