@@ -182,4 +182,8 @@
 
 (use-package go-rename)
 
+(use-package kubernetes
+  :ensure t
+  :commands (kubernetes-overview))
+
 (provide 'base-extensions)
