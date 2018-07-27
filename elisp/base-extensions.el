@@ -32,7 +32,6 @@
 
 (use-package flycheck)
 
-
 (use-package helm
   :init
   (require 'helm-config)
@@ -69,10 +68,10 @@
   :config
   (hlinum-activate))
 
-(use-package linum
-  :config
-  (setq linum-format " %3d ")
-  (global-linum-mode nil))
+;; (use-package linum
+;;   :config
+;;   (setq linum-format " %3d ")
+;;   (global-linum-mode nil))
 
 (use-package magit
   :config
@@ -176,14 +175,6 @@
 
 (use-package docker-compose-mode)
 
-(use-package go-playground)
-
 (use-package dockerfile-mode)
-
-(use-package go-rename)
-
-(use-package kubernetes
-  :ensure t
-  :commands (kubernetes-overview))
 
 (provide 'base-extensions)

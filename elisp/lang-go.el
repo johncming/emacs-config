@@ -35,4 +35,13 @@
       (set (make-local-variable 'compile-command)
            "go build -v && go test -v && go vet")))
 
+(use-package go-playground
+  :ensure t)
+
+(use-package go-rename
+  :ensure t)
+
+(use-package go-dlv
+  :ensure t)
+
 (provide 'lang-go)
